@@ -22,9 +22,9 @@ const Posts = () => {
         }
       })
       .catch((error) => {
-        if (error.response.status == 401) {
-          alert;
-        }
+        // if (error.response.status == 401) {
+        //   // alert();
+        // }
         // 로그인 페이지로 이동
         //또는 refresh 해서 재통신
 

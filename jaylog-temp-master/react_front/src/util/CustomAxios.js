@@ -47,7 +47,7 @@ class CustomAxios {
         localStorage.removeItem("refreshToken");
         // throw를 해도 되고
         alert("모든 토큰이 만료되었습니다.");
-        location.replace("/login");
+        window.location.replace("/login");
         // location만 쓸 때 안되면 window.location.replace를 쓰면 됨; 아예 화면 자체를 새로고침 함, 서버사이드 렌더링에는 쓰면 안됨; navigate는 주석만 새로고침 됨
       } else {
         // refreshToken 유효
